@@ -1,0 +1,5 @@
+[
+  { "pump_id": 1, "fuel_type": "ON",  "capacity": 500.0 },
+  { "pump_id": 2, "fuel_type": "PB95","capacity": 300.0 },
+  { "pump_id": 3, "fuel_type": "LPG", "capacity": 200.0 }
+]

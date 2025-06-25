@@ -1,0 +1,6 @@
+digraph {
+	node_shape=record
+	"gas_station.fuel_pump.FuelPump" [label="{{FuelPump|}}"]
+	"gas_station.fuel_pump.InsufficientFuelError" [label="{{InsufficientFuelError|}}"]
+	"gas_station.transaction.Transaction" [label="{{Transaction|}}"]
+}

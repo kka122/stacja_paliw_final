@@ -1,0 +1,98 @@
+[
+  {
+    "timestamp": "2025-06-25T12:26:59.295946",
+    "pump_id": 1,
+    "fuel_type": "ON",
+    "liters": 12.0,
+    "unit_price": 2.0,
+    "total_cost": 24.0
+  },
+  {
+    "timestamp": "2025-06-25T12:27:12.989673",
+    "pump_id": 2,
+    "fuel_type": "PB95",
+    "liters": 22.0,
+    "unit_price": 3.0,
+    "total_cost": 66.0
+  },
+  {
+    "timestamp": "2025-06-25T12:31:58.085761",
+    "pump_id": 2,
+    "fuel_type": "PB95",
+    "liters": 44.0,
+    "unit_price": 3.0,
+    "total_cost": 132.0
+  },
+  {
+    "timestamp": "2025-06-25T12:32:11.750346",
+    "pump_id": 3,
+    "fuel_type": "LPG",
+    "liters": 33.0,
+    "unit_price": 2.0,
+    "total_cost": 66.0
+  },
+  {
+    "timestamp": "2025-06-25T12:33:22.582486",
+    "pump_id": 3,
+    "fuel_type": "LPG",
+    "liters": 45.0,
+    "unit_price": 10.0,
+    "total_cost": 450.0
+  },
+  {
+    "timestamp": "2025-06-25T12:34:11.032541",
+    "pump_id": 2,
+    "fuel_type": "PB95",
+    "liters": 22.0,
+    "unit_price": 6.0,
+    "total_cost": 132.0
+  },
+  {
+    "timestamp": "2025-06-25T12:38:40.098413",
+    "pump_id": 2,
+    "fuel_type": "PB95",
+    "liters": 22.0,
+    "unit_price": 4.0,
+    "total_cost": 88.0
+  },
+  {
+    "timestamp": "2025-06-25T12:40:05.622477",
+    "pump_id": 2,
+    "fuel_type": "PB95",
+    "liters": 34.0,
+    "unit_price": 12.0,
+    "total_cost": 408.0
+  },
+  {
+    "timestamp": "2025-06-25T12:43:48.582247",
+    "pump_id": 2,
+    "fuel_type": "PB95",
+    "liters": 32.0,
+    "unit_price": 3.0,
+    "total_cost": 96.0
+  },
+  {
+    "timestamp": "2025-06-25T12:45:11.190644",
+    "pump_id": 3,
+    "fuel_type": "LPG",
+    "liters": 22.0,
+    "unit_price": 3.0,
+    "total_cost": 66.0
+  },
+  {
+    "timestamp": "2025-06-25T12:47:12.211272",
+    "pump_id": 2,
+    "fuel_type": "PB95",
+    "liters": 33.0,
+    "unit_price": 43.0,
+    "total_cost": 1419.0
+  },
+  {
+    "timestamp": "2025-06-25T13:54:17.794949",
+    "pump_id": 3,
+    "fuel_type": "LPG",
+    "liters": 33.0,
+    "unit_price": 4.55,
+    "total_cost": 150.15
+  }
+]
