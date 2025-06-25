@@ -28,6 +28,8 @@ def test_dispense_memory_usage():
 def test_history_load_save_memory_usage(tmp_history):
     # Przygotuj kilka transakcji
     sample = [Transaction(1, "ON", i, 5.0) for i in range(100)]
+    krotka=tuple(sample)
+    zbior=set(sample)
     for tx in sample:
         save_transaction(tx)
 
