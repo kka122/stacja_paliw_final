@@ -53,10 +53,10 @@ def generate_class_diagram():
             path = dot.render(OUTPUT_PNG.replace(".png",""), cleanup=True)
             try: dot.view(OUTPUT_PNG.replace(".png",""))
             except: pass
-            print("🔄 Diagram UML (Graphviz):", path)
+            print(" Diagram UML (Graphviz):", path)
             return
         except Exception as e:
-            print("⚠️ Graphviz failed:", e)
+            print("Graphviz failed:", e)
 
     # fallback NetworkX + Matplotlib
     G = nx.DiGraph()
@@ -69,5 +69,5 @@ def generate_class_diagram():
     nx.draw(G, pos, labels=labels, with_labels=True, arrows=True, node_size=3000, font_size=10)
     plt.tight_layout()
     plt.savefig(OUTPUT_PNG)
-    print("🔄 Diagram UML (NetworkX):", OUTPUT_PNG)
+    print(" Diagram UML (NetworkX):", OUTPUT_PNG)
     plt.show()
