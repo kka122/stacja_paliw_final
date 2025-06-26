@@ -94,5 +94,21 @@
     "liters": 33.0,
     "unit_price": 4.55,
     "total_cost": 150.15
+  },
+  {
+    "timestamp": "2025-06-25T16:47:33.978708",
+    "pump_id": 1,
+    "fuel_type": "ON",
+    "liters": 500.0,
+    "unit_price": 5.0,
+    "total_cost": 2500.0
+  },
+  {
+    "timestamp": "2025-06-25T16:51:17.825864",
+    "pump_id": 2,
+    "fuel_type": "PB95",
+    "liters": 12.0,
+    "unit_price": 6.0,
+    "total_cost": 72.0
   }
 ]

@@ -1,7 +1,7 @@
 from .fuel_pump import FuelPump, InsufficientFuelError
 from .history import load_history, save_transaction
 from .transaction import Transaction
-from .utils import average_unit_price
+from .utils import average_unit_price, filter_expensive  # Dodaj funkcję filter_expensive do utils.py
 from .stats import plot_liters_vs_cost
 
 def main_menu(pumps: list[FuelPump]):
@@ -10,8 +10,9 @@ def main_menu(pumps: list[FuelPump]):
         print("1. Zatankuj")
         print("2. Pokaż historię transakcji")
         print("3. Pokaż średnią cenę paliwa")
-        print("4. Pokaż wykres: litry vs koszt")
-        print("5. Zakończ")
+        print("4. Pokaż wykres: ilość litrów w czasie")
+        print("5. Pokaż tylko drogie transakcje")
+        print("6. Zakończ")
         choice = input("Wybierz opcję: ").strip()
 
         if choice == "1":
@@ -23,6 +24,8 @@ def main_menu(pumps: list[FuelPump]):
         elif choice == "4":
             plot_liters_vs_cost()
         elif choice == "5":
+            show_expensive_transactions()
+        elif choice == "6":
             print("Do zobaczenia!")
             break
         else:
@@ -34,7 +37,7 @@ def do_refuel(pumps):
     try:
         pid = int(input("Numer dystrybutora: "))
         liters = float(input("Ilość litrów: "))
-        price  = float(input("Cena za litr (zł): "))
+        price = float(input("Cena za litr (zł): "))
     except ValueError:
         print("Błędne dane wejściowe.")
         return
@@ -62,3 +65,18 @@ def show_history():
 def show_average_price():
     avg = average_unit_price(load_history())
     print(f"Średnia cena jednostkowa paliwa: {avg:.2f} zł")
+
+def show_expensive_transactions():
+    try:
+        min_cost = float(input("Podaj minimalny koszt transakcji [zł]: "))
+    except ValueError:
+        print("Błędna kwota.")
+        return
+    history = load_history()
+    expensive = filter_expensive(history, min_cost)
+    if not expensive:
+        print("Brak transakcji powyżej tej kwoty.")
+    else:
+        print(f"Transakcje z kosztem >= {min_cost:.2f} zł:")
+        for tx in expensive:
+            print(tx)
